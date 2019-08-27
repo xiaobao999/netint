@@ -308,24 +308,27 @@ export default {
   },
   data() {
     return {
-     ulList:[],
-     cnt:0
-    }
+      ulList: [],
+      cnt: 0
+    };
   },
   mounted() {
-    this.drawLine();  
+    this.drawLine();
   },
   methods: {
-    getJson(){
-    this.$http.get('http://localhost:53000/course').then((res)=>{
-        //console.log(res.data);
-        const data = res.data;
-        this.ulList=data;
-        this.cnt = data[0].id
-        console.log(this.ulList);
-       },(err)=>{
-       	console.log(err, '请求失败')
-       });
+    getJson() {
+      this.$http.get("http://localhost:53000/course").then(
+        res => {
+          //console.log(res.data);
+          const data = res.data;
+          this.ulList = data;
+          this.cnt = data[0].id;
+          console.log(this.ulList);
+        },
+        err => {
+          console.log(err, "请求失败");
+        }
+      );
     },
     drawLine() {
       // 基于准备好的dom，初始化echarts实例
@@ -401,39 +404,42 @@ export default {
           }
         ]
       });
-      this.$http.get("http://localhost:53000/course") .then((res) => {
-            const data = res.data;
-            myChart.setOption({
-              xAxis: [{
-                data: [
-                  data[1].id,
-            1810,
-            1820,
-            1830,
-            1840,
-            1850,
-            1860,
-            1870,
-            1880,
-            1890,
-            1900,
-            1910,
-            1920,
-            1930,
-            1940,
-            1950,
-            1960,
-            1970,
-            1980,
-            1990,
-            2000,
-            2010
-                ]
-              }]
-            });
-    });
+      this.$http.get("http://localhost:53000/course").then(res => {
+        const data = res.data;
+        myChart.setOption({
+          xAxis: [
+            {
+              data: [
+                data[1].id,
+                1810,
+                1820,
+                1830,
+                1840,
+                1850,
+                1860,
+                1870,
+                1880,
+                1890,
+                1900,
+                1910,
+                1920,
+                1930,
+                1940,
+                1950,
+                1960,
+                1970,
+                1980,
+                1990,
+                2000,
+                2010
+              ]
+            }
+          ]
+        });
+      });
+    }
   }
-}};
+};
 </script>
 
 
