@@ -1,0 +1,1883 @@
+{
+    "course": [
+        {
+            "id": 1689,
+            "course_name": "马连白米且",
+            "autor": "袁明",
+            "college": "金并即总变史",
+            "category_Id": 2
+        },
+        {
+            "id": 19901,
+            "course_name": "公拉农题队始果动",
+            "autor": "高丽",
+            "college": "先了队叫及便",
+            "category_Id": 2
+        }
+    ],
+    "paper": [
+        {
+            "title": "A Fast Learning Algorithm for Deep Belief Nets",
+            "author": [
+                [
+                    "Geoffrey E. Hinton",
+                    21
+                ],
+                [
+                    "Simon Osindero",
+                    22
+                ],
+                [
+                    "Yee Whye Teh",
+                    23
+                ]
+            ],
+            "abstract": "We show how to use complementary priors to eliminate the explaining-away effects that make inference difficult in densely connected belief nets that have many hidden layers. Using complementary priors, we derive a fast, greedy algorithm that can learn deep, directed belief networks one layer at a time, provided the top two layers form an undirected associative memory. The fast, greedy algorithm is used to initialize a slower learning procedure that fine-tunes the weights using a contrastive version of the wake-sleep algorithm. After fine-tuning, a network with three hidden layers forms a very good generative model of the joint distribution of handwritten digit images and their labels. This generative model gives better digit classification than the best discriminative learning algorithms. The low-dimensional manifolds on which the digits lie are modeled by long ravines in the free-energy landscape of the top-level associative memory, and it is easy to explore these ravines by using the directed connections to display what the associative memory has in mind.",
+            "publisher": [
+                "Neural Computation",
+                41
+            ],
+            "pubyear": 2006,
+            "citation": 6538,
+            "affiliation": [
+                [
+                    "Google",
+                    31
+                ],
+                [
+                    "MIT",
+                    32
+                ],
+                [
+                    "UCB",
+                    33
+                ]
+            ],
+            "id": 11,
+            "type": "papernode",
+            "topic": [
+                [
+                    "deep learning",
+                    1234
+                ],
+                [
+                    "computer science",
+                    2345
+                ],
+                [
+                    "Neural Computation",
+                    7890
+                ]
+            ],
+            "reference": [
+                [
+                    "Training Invariant Support Vector Machines",
+                    1234
+                ],
+                [
+                    "On Contrastive Divergence Learning",
+                    4567
+                ]
+            ],
+            "relation": [
+                [
+                    "第一作者",
+                    "author",
+                    "Geoffrey E. Hinton",
+                    1234
+                ],
+                [
+                    "第一机构",
+                    "affiliation",
+                    "Google",
+                    21234
+                ]
+            ]
+        },
+        {
+            "title": "2 Fast Learning Algorithm for Deep Belief Nets",
+            "author": [
+                [
+                    "Geoffrey E. Hinton",
+                    21
+                ],
+                [
+                    "Simon Osindero",
+                    22
+                ]
+            ],
+            "abstract": "We show how to use complementary priors to eliminate the explaining-away effects that make inference difficult in densely connected belief nets that have many hidden layers. Using complementary priors, we derive a fast, greedy algorithm that can learn deep, directed belief networks one layer at a time, provided the top two layers form an undirected associative memory. The fast, greedy algorithm is used to initialize a slower learning procedure that fine-tunes the weights using a contrastive version of the wake-sleep algorithm. After fine-tuning, a network with three hidden layers forms a very good generative model of the joint distribution of handwritten digit images and their labels. This generative model gives better digit classification than the best discriminative learning algorithms. The low-dimensional manifolds on which the digits lie are modeled by long ravines in the free-energy landscape of the top-level associative memory, and it is easy to explore these ravines by using the directed connections to display what the associative memory has in mind.",
+            "publisher": [
+                "Neural Computation",
+                41
+            ],
+            "pubyear": 2006,
+            "citation": 6538,
+            "affiliation": [
+                [
+                    "Google",
+                    31
+                ],
+                [
+                    "MIT",
+                    32
+                ]
+            ],
+            "id": 12,
+            "type": "papernode",
+            "topic": [
+                [
+                    "deep learning",
+                    1234
+                ],
+                [
+                    "computer science",
+                    2345
+                ],
+                [
+                    "Neural Computation",
+                    7890
+                ]
+            ],
+            "reference": [
+                [
+                    "Training Invariant Support Vector Machines",
+                    1234
+                ],
+                [
+                    "On Contrastive Divergence Learning",
+                    4567
+                ]
+            ],
+            "relation": [
+                [
+                    "第一作者",
+                    "author",
+                    "Geoffrey E. Hinton",
+                    1234
+                ],
+                [
+                    "第一机构",
+                    "affiliation",
+                    "Google",
+                    21234
+                ]
+            ]
+        }
+    ],
+    "author": [
+        {
+            "name": "Geoffrey E. Hinton",
+            "affiliation": [
+                [
+                    "Google",
+                    31
+                ],
+                [
+                    "MIT",
+                    32
+                ]
+            ],
+            "topic": [
+                [
+                    "deep learning",
+                    1234
+                ],
+                [
+                    "computer science",
+                    2345
+                ],
+                [
+                    "Neural Computation",
+                    7890
+                ]
+            ],
+            "id": 21,
+            "type": "authornode",
+            "citation": 6538,
+            "papercount": 100,
+            "firstauthorcount": 30,
+            "publishercount": 10,
+            "countbyyear": [
+                [
+                    2003,
+                    10
+                ],
+                [
+                    2004,
+                    15
+                ],
+                [
+                    2005,
+                    20
+                ],
+                [
+                    2006,
+                    10
+                ]
+            ],
+            "countbytopic": [
+                [
+                    "deep learning",
+                    10
+                ],
+                [
+                    "computer science",
+                    15
+                ],
+                [
+                    "Neural Computation",
+                    20
+                ]
+            ],
+            "relation": [
+                [
+                    "合作作者",
+                    "author",
+                    "Simon Osindero",
+                    22
+                ],
+                [
+                    "合作作者",
+                    "author",
+                    "Yee Whye Teh",
+                    23
+                ],
+                [
+                    "投稿于",
+                    "publisher",
+                    "Neural Computation",
+                    41
+                ]
+            ]
+        },
+        {
+            "name": "Simon Osindero",
+            "affiliation": [
+                [
+                    "Google",
+                    31
+                ],
+                [
+                    "MIT",
+                    32
+                ]
+            ],
+            "topic": [
+                [
+                    "deep learning",
+                    1234
+                ],
+                [
+                    "computer science",
+                    2345
+                ],
+                [
+                    "Neural Computation",
+                    7890
+                ]
+            ],
+            "id": 22,
+            "type": "authornode",
+            "citation": 1111,
+            "papercount": 111,
+            "firstauthorcount": 30,
+            "publishercount": 10,
+            "countbyyear": [
+                [
+                    2003,
+                    10
+                ],
+                [
+                    2004,
+                    15
+                ],
+                [
+                    2005,
+                    20
+                ],
+                [
+                    2006,
+                    10
+                ]
+            ],
+            "countbytopic": [
+                [
+                    "deep learning",
+                    10
+                ],
+                [
+                    "computer science",
+                    15
+                ],
+                [
+                    "Neural Computation",
+                    20
+                ]
+            ],
+            "relation": [
+                [
+                    "合作作者",
+                    "author",
+                    "Geoffrey E. Hinton",
+                    21
+                ],
+                [
+                    "投稿于",
+                    "publisher",
+                    "Neural Computation",
+                    41
+                ]
+            ]
+        },
+        {
+            "name": "Yee Whye Teh",
+            "affiliation": [
+                [
+                    "UCB",
+                    33
+                ]
+            ],
+            "topic": [
+                [
+                    "deep learning",
+                    1234
+                ],
+                [
+                    "computer science",
+                    2345
+                ],
+                [
+                    "Neural Computation",
+                    7890
+                ]
+            ],
+            "id": 23,
+            "type": "authornode",
+            "citation": 6538,
+            "papercount": 100,
+            "firstauthorcount": 30,
+            "publishercount": 10,
+            "countbyyear": [
+                [
+                    2003,
+                    10
+                ],
+                [
+                    2004,
+                    15
+                ],
+                [
+                    2005,
+                    20
+                ],
+                [
+                    2006,
+                    10
+                ]
+            ],
+            "countbytopic": [
+                [
+                    "deep learning",
+                    10
+                ],
+                [
+                    "computer science",
+                    15
+                ],
+                [
+                    "Neural Computation",
+                    20
+                ]
+            ],
+            "relation": [
+                [
+                    "合作作者",
+                    "author",
+                    "Simon Osindero",
+                    22
+                ],
+                [
+                    "投稿于",
+                    "publisher",
+                    "Neural Computation",
+                    41
+                ]
+            ]
+        }
+    ],
+    "affiliation": [
+        {
+            "fullname": "Peking University",
+            "abbrname": [
+                "PKU",
+                "PU"
+            ],
+            "location": "China",
+            "zipcode": 100000,
+            "subaff": [
+                "CITS",
+                "MS",
+                "LS"
+            ],
+            "author": [
+                [
+                    "Tom",
+                    1234
+                ],
+                [
+                    "Bob",
+                    6789
+                ]
+            ],
+            "topic": [
+                [
+                    "deep learning",
+                    1234
+                ],
+                [
+                    "computer science",
+                    2345
+                ],
+                [
+                    "Neural Computation",
+                    7890
+                ]
+            ],
+            "id": 30,
+            "type": "affiliationnode",
+            "citation": 6538,
+            "papercount": 100,
+            "firstauthorcount": 30,
+            "publishercount": 10,
+            "countbyyear": [
+                [
+                    2003,
+                    10
+                ],
+                [
+                    2004,
+                    15
+                ],
+                [
+                    2005,
+                    20
+                ],
+                [
+                    2006,
+                    10
+                ]
+            ],
+            "countbytopic": [
+                [
+                    "deep learning",
+                    10
+                ],
+                [
+                    "computer science",
+                    15
+                ],
+                [
+                    "Neural Computation",
+                    20
+                ]
+            ],
+            "relation": [
+                [
+                    "合作机构",
+                    "affiliation",
+                    "Google",
+                    21234
+                ],
+                [
+                    "合作机构",
+                    "affiliation",
+                    "MIT",
+                    1234
+                ]
+            ]
+        },
+        {
+            "fullname": "Google",
+            "abbrname": [
+                "Google Inc.",
+                "GOOG"
+            ],
+            "location": "USA",
+            "zipcode": 600000,
+            "subaff": [
+                "AlphaBet",
+                "DeepMind",
+                "STR"
+            ],
+            "author": [
+                [
+                    "Geoffrey E. Hinton",
+                    21
+                ],
+                [
+                    "Simon Osindero",
+                    22
+                ]
+            ],
+            "topic": [
+                [
+                    "deep learning",
+                    1234
+                ],
+                [
+                    "computer science",
+                    2345
+                ],
+                [
+                    "Neural Computation",
+                    7890
+                ]
+            ],
+            "id": 31,
+            "type": "affiliationnode",
+            "citation": 6538,
+            "papercount": 100,
+            "firstauthorcount": 30,
+            "publishercount": 10,
+            "countbyyear": [
+                [
+                    2003,
+                    10
+                ],
+                [
+                    2004,
+                    15
+                ],
+                [
+                    2005,
+                    20
+                ],
+                [
+                    2006,
+                    10
+                ]
+            ],
+            "countbytopic": [
+                [
+                    "deep learning",
+                    10
+                ],
+                [
+                    "computer science",
+                    15
+                ],
+                [
+                    "Neural Computation",
+                    20
+                ]
+            ],
+            "relation": [
+                [
+                    "合作机构",
+                    "affiliation",
+                    "Peking University",
+                    30
+                ],
+                [
+                    "合作机构",
+                    "affiliation",
+                    "MIT",
+                    32
+                ]
+            ]
+        },
+        {
+            "fullname": "Massachusetts Institute of Technology",
+            "abbrname": [
+                "MIT"
+            ],
+            "location": "USA",
+            "zipcode": 610000,
+            "subaff": [
+                "MS",
+                "LS",
+                "DCS"
+            ],
+            "author": [
+                [
+                    "Geoffrey E. Hinton",
+                    21
+                ],
+                [
+                    "Simon Osindero",
+                    22
+                ]
+            ],
+            "topic": [
+                [
+                    "deep learning",
+                    1234
+                ],
+                [
+                    "computer science",
+                    2345
+                ],
+                [
+                    "Neural Computation",
+                    7890
+                ]
+            ],
+            "id": 32,
+            "type": "affiliationnode",
+            "citation": 6538,
+            "papercount": 100,
+            "firstauthorcount": 30,
+            "publishercount": 10,
+            "countbyyear": [
+                [
+                    2003,
+                    10
+                ],
+                [
+                    2004,
+                    15
+                ],
+                [
+                    2005,
+                    20
+                ],
+                [
+                    2006,
+                    10
+                ]
+            ],
+            "countbytopic": [
+                [
+                    "deep learning",
+                    10
+                ],
+                [
+                    "computer science",
+                    15
+                ],
+                [
+                    "Neural Computation",
+                    20
+                ]
+            ],
+            "relation": [
+                [
+                    "合作机构",
+                    "affiliation",
+                    "Peking University",
+                    30
+                ],
+                [
+                    "合作机构",
+                    "affiliation",
+                    "Google",
+                    31
+                ]
+            ]
+        }
+    ],
+    "publisher": [
+        {
+            "name": "Neural Computation",
+            "author": [
+                [
+                    "Geoffrey E. Hinton",
+                    21
+                ],
+                [
+                    "Simon Osindero",
+                    22
+                ],
+                [
+                    "Yee Whye Teh",
+                    23
+                ]
+            ],
+            "topic": [
+                [
+                    "deep learning",
+                    1234
+                ],
+                [
+                    "computer science",
+                    2345
+                ],
+                [
+                    "Neural Computation",
+                    7890
+                ]
+            ],
+            "id": 41,
+            "type": "publishernode",
+            "citation": 6538,
+            "papercount": 100,
+            "countbyyear": [
+                [
+                    2003,
+                    10
+                ],
+                [
+                    2004,
+                    15
+                ],
+                [
+                    2005,
+                    20
+                ],
+                [
+                    2006,
+                    10
+                ]
+            ],
+            "countbytopic": [
+                [
+                    "deep learning",
+                    10
+                ],
+                [
+                    "computer science",
+                    15
+                ],
+                [
+                    "Neural Computation",
+                    20
+                ]
+            ],
+            "relation": [
+                [
+                    "领域相关",
+                    "publisher",
+                    "Neural Computation Conf",
+                    42
+                ],
+                [
+                    "领域相关",
+                    "publisher",
+                    "Neural Computation Conf2",
+                    43
+                ]
+            ]
+        },
+        {
+            "name": "Neural Computation Conf",
+            "author": [
+                [
+                    "Geoffrey E. Hinton",
+                    21
+                ],
+                [
+                    "Simon Osindero",
+                    22
+                ],
+                [
+                    "Yee Whye Teh",
+                    23
+                ]
+            ],
+            "topic": [
+                [
+                    "deep learning",
+                    1234
+                ],
+                [
+                    "computer science",
+                    2345
+                ],
+                [
+                    "Neural Computation",
+                    7890
+                ]
+            ],
+            "id": 42,
+            "type": "publishernode",
+            "citation": 6538,
+            "papercount": 100,
+            "countbyyear": [
+                [
+                    2003,
+                    10
+                ],
+                [
+                    2004,
+                    15
+                ],
+                [
+                    2005,
+                    20
+                ],
+                [
+                    2006,
+                    10
+                ]
+            ],
+            "countbytopic": [
+                [
+                    "deep learning",
+                    10
+                ],
+                [
+                    "computer science",
+                    15
+                ],
+                [
+                    "Neural Computation",
+                    20
+                ]
+            ],
+            "relation": [
+                [
+                    "领域相关",
+                    "publisher",
+                    "Neural Computation",
+                    41
+                ],
+                [
+                    "领域相关",
+                    "publisher",
+                    "Neural Computation Conf2",
+                    43
+                ]
+            ]
+        },
+        {
+            "name": "Neural Computation Conf2",
+            "author": [
+                [
+                    "Geoffrey E. Hinton",
+                    21
+                ],
+                [
+                    "Simon Osindero",
+                    22
+                ],
+                [
+                    "Yee Whye Teh",
+                    23
+                ]
+            ],
+            "topic": [
+                [
+                    "deep learning",
+                    1234
+                ],
+                [
+                    "computer science",
+                    2345
+                ],
+                [
+                    "Neural Computation",
+                    7890
+                ]
+            ],
+            "id": 43,
+            "type": "publishernode",
+            "citation": 6538,
+            "papercount": 100,
+            "countbyyear": [
+                [
+                    2003,
+                    10
+                ],
+                [
+                    2004,
+                    15
+                ],
+                [
+                    2005,
+                    20
+                ],
+                [
+                    2006,
+                    10
+                ]
+            ],
+            "countbytopic": [
+                [
+                    "deep learning",
+                    10
+                ],
+                [
+                    "computer science",
+                    15
+                ],
+                [
+                    "Neural Computation",
+                    20
+                ]
+            ],
+            "relation": [
+                [
+                    "领域相关",
+                    "publisher",
+                    "Neural Computation",
+                    41
+                ],
+                [
+                    "领域相关",
+                    "publisher",
+                    "Neural Computation Conf",
+                    42
+                ]
+            ]
+        }
+    ],
+    "topic": [
+        {
+            "fullname": "deep learning",
+            "author": [
+                [
+                    "Geoffrey E. Hinton",
+                    21
+                ],
+                [
+                    "Simon Osindero",
+                    22
+                ],
+                [
+                    "Yee Whye Teh",
+                    23
+                ]
+            ],
+            "affiliation": [
+                [
+                    "Google",
+                    31
+                ],
+                [
+                    "MIT",
+                    32
+                ],
+                [
+                    "UCB",
+                    33
+                ]
+            ],
+            "publisher": [
+                [
+                    "Neural Computation",
+                    41
+                ],
+                [
+                    "Neural Computation Conf",
+                    42
+                ]
+            ],
+            "parenttopic": [
+                [
+                    "computer science",
+                    52
+                ],
+                [
+                    "Neural Computation111",
+                    53
+                ]
+            ],
+            "childtopic": [
+                [
+                    "deep learning222",
+                    55
+                ],
+                [
+                    "computer science222",
+                    56
+                ],
+                [
+                    "Neural Computation222",
+                    57
+                ]
+            ],
+            "id": 51,
+            "type": "topicnode",
+            "citation": 6538,
+            "papercount": 100,
+            "publishercount": 10,
+            "countbyyear": [
+                [
+                    2003,
+                    10
+                ],
+                [
+                    2004,
+                    15
+                ],
+                [
+                    2005,
+                    20
+                ],
+                [
+                    2006,
+                    10
+                ]
+            ],
+            "relation": [
+                [
+                    "领域相关",
+                    "topic",
+                    "Neural Learning",
+                    59
+                ],
+                [
+                    "领域相关",
+                    "topic",
+                    "Neural Computation2",
+                    510
+                ]
+            ]
+        },
+        {
+            "fullname": "computer science",
+            "author": [
+                [
+                    "Geoffrey E. Hinton",
+                    21
+                ],
+                [
+                    "Simon Osindero",
+                    22
+                ],
+                [
+                    "Yee Whye Teh",
+                    23
+                ]
+            ],
+            "affiliation": [
+                [
+                    "Google",
+                    31
+                ],
+                [
+                    "MIT",
+                    32
+                ],
+                [
+                    "UCB",
+                    33
+                ]
+            ],
+            "publisher": [
+                [
+                    "Neural Computation",
+                    41
+                ],
+                [
+                    "Neural Computation Conf",
+                    42
+                ]
+            ],
+            "parenttopic": [],
+            "childtopic": [
+                [
+                    "deep learning",
+                    51
+                ],
+                [
+                    "database",
+                    58
+                ]
+            ],
+            "id": 52,
+            "type": "topicnode",
+            "citation": 6538,
+            "papercount": 100,
+            "publishercount": 10,
+            "countbyyear": [
+                [
+                    2003,
+                    10
+                ],
+                [
+                    2004,
+                    15
+                ],
+                [
+                    2005,
+                    20
+                ],
+                [
+                    2006,
+                    10
+                ]
+            ],
+            "relation": [
+                [
+                    "领域相关",
+                    "topic",
+                    "deep learning222",
+                    55
+                ],
+                [
+                    "领域相关",
+                    "topic",
+                    "computer science222",
+                    56
+                ]
+            ]
+        }
+    ],
+    "tree_author": [
+        {
+            "index": "G",
+            "name": "Geoffrey E. Hinton",
+            "label": "Geoffrey E. Hinton(Google)",
+            "id": 21,
+            "type": "authornode",
+            "affiliation": "Google"
+        },
+        {
+            "index": "S",
+            "name": "Simon Osindero",
+            "label": "Simon Osindero(MIT)",
+            "id": 22,
+            "type": "authornode",
+            "affiliation": "MIT"
+        },
+        {
+            "index": "Y",
+            "name": "Yee Whye Teh",
+            "label": "Yee Whye Teh(UCB)",
+            "id": 23,
+            "type": "authornode",
+            "affiliation": "UCB"
+        }
+    ],
+    "tree_affiliation": [
+        {
+            "index": "M",
+            "label": "MIT",
+            "name": "MIT",
+            "id": 32,
+            "type": "affiliationnode"
+        },
+        {
+            "index": "G",
+            "label": "Google",
+            "name": "Google",
+            "id": 31,
+            "type": "affiliationnode"
+        },
+        {
+            "index": "U",
+            "label": "UCB",
+            "name": "UCB",
+            "id": 33,
+            "type": "affiliationnode"
+        }
+    ],
+    "tree_publisher": [
+        {
+            "index": "N",
+            "label": "Neural Computation",
+            "name": "Neural Computation",
+            "id": 41,
+            "type": "publishernode"
+        },
+        {
+            "index": "N",
+            "label": "Neural Computation Conf",
+            "name": "Neural Computation Conf",
+            "id": 42,
+            "type": "publishernode"
+        },
+        {
+            "index": "N",
+            "label": "Neural Computation Conf2",
+            "name": "Neural Computation Conf2",
+            "id": 43,
+            "type": "publishernode"
+        }
+    ],
+    "authorshow": [
+        {
+            "name": "Eric S. Lander",
+            "id": "2557216553",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Douglas G. Altman",
+            "id": "1937107987",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Walter C. Willett",
+            "id": "1793908362",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Albert Hofman",
+            "id": "2251992767",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Hagop M. Kantarjian",
+            "id": "1874266680",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Patrick W. Serruys",
+            "id": "2130437855",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Mark J. Daly",
+            "id": "2426470670",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Frank B. Hu",
+            "id": "2104358674",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Michael Grätzel",
+            "id": "2012626572",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Zhong Lin Wang",
+            "id": "2113800519",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "George M. Sheldrick",
+            "id": "220794011",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Ahmedin Jemal",
+            "id": "581716687",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Salim Yusuf",
+            "id": "2148720131",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Geoffrey E. Hinton",
+            "id": "563069026",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Yoshua Bengio",
+            "id": "161269817",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "JoAnn E. Manson",
+            "id": "2166990755",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Gregory Y.H. Lip",
+            "id": "596186023",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Gordon H. Guyatt",
+            "id": "706057080",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "David J. Hunter",
+            "id": "2603142371",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Andrew Zisserman",
+            "id": "2469405535",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "David Moher",
+            "id": "204361474",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Robert Langer",
+            "id": "2080932746",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Paul M. Ridker",
+            "id": "1389051172",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Harlan M. Krumholz",
+            "id": "92389296",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Eric D. Peterson",
+            "id": "2155727976",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Stephan Windecker",
+            "id": "2149334469",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Matthew Meyerson",
+            "id": "1822150783",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Frede Blaabjerg",
+            "id": "327080418",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Edward Giovannucci",
+            "id": "1977891194",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Eugene Braunwald",
+            "id": "1985333902",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Nicholas J. Wareham",
+            "id": "716274308",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Richard K. Wilson",
+            "id": "2779760225",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "George Davey Smith",
+            "id": "2168326394",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Gad Getz",
+            "id": "2160087672",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Richard A. Gibbs",
+            "id": "2111153991",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Francis S. Collins",
+            "id": "2100172157",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Ronald C. Kessler",
+            "id": "2157138196",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Meir J. Stampfer",
+            "id": "1664523425",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Robert Tibshirani",
+            "id": "57053632",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Emelia J. Benjamin",
+            "id": "2168721218",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "A. K. Geim",
+            "id": "2077177608",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Cyrus Cooper",
+            "id": "2140769477",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Gonçalo R. Abecasis",
+            "id": "2305243664",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "K. S. Novoselov",
+            "id": "2017532309",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Shizuo Akira",
+            "id": "2149472920",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "John J.V. McMurray",
+            "id": "2342892333",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Deepak L. Bhatt",
+            "id": "2170555724",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Elaine R. Mardis",
+            "id": "694676656",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Graham A. Colditz",
+            "id": "2067218961",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Alan D. Lopez",
+            "id": "2128434403",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Scott Shenker",
+            "id": "719828399",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Valentin Fuster",
+            "id": "2118878989",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Didier Raoult",
+            "id": "1033672614",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Sidney C. Smith",
+            "id": "2113779959",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "E. Grauges",
+            "id": "2104515958",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Martin B. Leon",
+            "id": "2102291604",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Gregg C. Fonarow",
+            "id": "189732620",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Eric Boerwinkle",
+            "id": "2093714155",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Jorge E. Cortes",
+            "id": "2159510707",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Jiawei Han",
+            "id": "2121939561",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Robert M. Califf",
+            "id": "2291201213",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Anil K. Jain",
+            "id": "2162010601",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Richard Peto",
+            "id": "1915162981",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Trevor Darrell",
+            "id": "2174985400",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "C. Bozzi",
+            "id": "2310082373",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Tim D. Spector",
+            "id": "62300903",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "C. Blocker",
+            "id": "2199871126",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Josef Coresh",
+            "id": "2212624663",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "A. Palano",
+            "id": "426350050",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Dariush Mozaffarian",
+            "id": "20044890",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "David Altshuler",
+            "id": "2472878971",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Mark I. McCarthy",
+            "id": "2472664475",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Elliott M. Antman",
+            "id": "115656586",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Rebecca L. Siegel",
+            "id": "2162505138",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Ilya Sutskever",
+            "id": "215131072",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Zulfiqar A Bhutta",
+            "id": "2015186656",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Hari Balakrishnan",
+            "id": "1998464616",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Kay-Tee Khaw",
+            "id": "2135531191",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Bruce M. Psaty",
+            "id": "45729758",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Jean Louis Vincent",
+            "id": "2307991074",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Ion Stoica",
+            "id": "2161479384",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Mohsen Naghavi",
+            "id": "2113265520",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Kari Stefansson",
+            "id": "1792687988",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Kenneth C. Anderson",
+            "id": "2128327759",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "David Haussler",
+            "id": "2051598476",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Michael I. Jordan",
+            "id": "2435751034",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Todd R. Golub",
+            "id": "1997993096",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Yi Cui",
+            "id": "2100354044",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Paul G. Richardson",
+            "id": "2134517984",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Tamara B. Harris",
+            "id": "2494134502",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Yusuke Nakamura",
+            "id": "2303476733",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Jitendra Malik",
+            "id": "2136556746",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "Jian Sun",
+            "id": "220",
+            "lat": 0.0,
+            "lon": 0.0
+        },
+        {
+            "name": "R Core Team",
+            "id": "268",
+            "lat": 0.0,
+            "lon": 0.0
+        }
+    ],
+    "rightlist1": {
+        "name": "张三丰",
+        "mechanism": "武当派",
+        "introduce": "张三丰，名君宝，又名全一，道号三丰，宋末元初真人，武当山道人，武当派始祖，民族英雄 、内家拳始祖、太极拳始祖、武学泰山北斗、龙行书法始祖。",
+        "Sbjcontent": "舍我亡亲墓，乡山留不得”一句，陈述了祖师中年丧考妣，为了苦寻丹秘，违背祖训未丁忧，就离开了家乡。",
+        "publication": [
+            "《宁波府志》",
+            "《明史·方伎》",
+            "《上天梯》"
+        ]
+    },
+    "rightlist2": {
+        "name": "张三丰111",
+        "mechanism": "武当派111",
+        "introduce": "张三丰，名君宝，又名全一，道号三丰，宋末元初真人，武当山道人，武当派始祖，民族英雄 、内家拳始祖、太极拳始祖、武学泰山北斗、龙行书法始祖。",
+        "Sbjcontent": "舍我亡亲墓，乡山留不得”一句，陈述了祖师中年丧考妣，为了苦寻丹秘，违背祖训未丁忧，就离开了家乡。",
+        "publication": [
+            "《宁波府志》",
+            "《明史·方伎》",
+            "《上天梯》"
+        ]
+    },
+    "leftlist": {
+        "state": "publication",
+        "le_d": [
+            {
+                "name": "张三",
+                "num": "4.8万",
+                "checked": "",
+                "Percentage": 60
+            },
+            {
+                "name": "李四",
+                "num": "4.8万",
+                "checked": "",
+                "Percentage": 20
+            },
+            {
+                "name": "张三",
+                "num": "4.8万",
+                "checked": "",
+                "Percentage": 80
+            }
+        ]
+    },
+    "articlelist1": {
+        "msg": "《上天梯》",
+        "moremechanism": "+5",
+        "morewrite": "+5",
+        "morekeyword": "+5",
+        "writerlist": [
+            "张三丰",
+            "李四",
+            "王五",
+            "张三丰",
+            "李四",
+            "王五",
+            "张三丰",
+            "李四",
+            "王五"
+        ],
+        "mechanismlist": [
+            "楚辞",
+            "出典",
+            "无根树",
+            "楚辞",
+            "出典",
+            "无根树",
+            "楚辞",
+            "出典",
+            "无根树"
+        ],
+        "keywordlist": [
+            "张三丰",
+            "无根树",
+            "文化",
+            "修真",
+            "张三丰",
+            "无根树",
+            "文化",
+            "修真"
+        ],
+        "years": "2000",
+        "cited": "180",
+        "articlcontent": "天降火龙师，玄音参一一，知我内丹成，不讲筑基业，赐我外丹功，可怜谆告切，炼己忘世情，采药按时节，先天无斤两，火候无爻策，只将老嫩分，但把文武别，纯以真意求，刀圭难缕晰，十月抱元胎，九年加面壁，换鼎复生孙，骑龙起霹雳，天地坏有时，仙翁寿无极。"
+    },
+    "articlelist2": {
+        "msg": "《下天梯》",
+        "moremechanism": "+5",
+        "morewrite": "+5",
+        "morekeyword": "+5",
+        "writerlist": [
+            "张三丰",
+            "李四",
+            "王五",
+            "张三丰",
+            "李四",
+            "王五",
+            "张三丰",
+            "李四",
+            "王五"
+        ],
+        "mechanismlist": [
+            "楚辞",
+            "出典",
+            "无根树",
+            "楚辞",
+            "出典",
+            "无根树",
+            "楚辞",
+            "出典",
+            "无根树"
+        ],
+        "keywordlist": [
+            "张三丰",
+            "无根树",
+            "文化",
+            "修真",
+            "张三丰",
+            "无根树",
+            "文化",
+            "修真"
+        ],
+        "years": "2000",
+        "cited": "180",
+        "articlcontent": "天降火龙师，玄音参一一，知我内丹成，不讲筑基业，赐我外丹功，可怜谆告切，炼己忘世情，采药按时节，先天无斤两，火候无爻策，只将老嫩分，但把文武别，纯以真意求，刀圭难缕晰，十月抱元胎，九年加面壁，换鼎复生孙，骑龙起霹雳，天地坏有时，仙翁寿无极。"
+    }
+}
