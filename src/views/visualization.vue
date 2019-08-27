@@ -438,12 +438,21 @@ export default {
       var indexname;
       if (data.type === "author") {
         indexname = data.label;
-        let n = this.data[0].children.findIndex((itme, index) => {
-          if (itme.label == data.label) {
-            return index;
+        //console.log(indexname);
+        // let n = this.data[0].children.findIndex(function(value, index, arr) {
+        //   if (value.label != indexname) {
+        //     return index;
+        //   }
+        // });
+        let n;
+        for (let i = 0, l = this.data[0].children.length; i < l; i++) {
+          // console.log(this.data[0].children[i].label, indexname);
+          if (this.data[0].children[i].label == indexname) {
+            n = i;
           }
-        });
-        console.log(n);
+        }
+
+        // console.log(n);
         this.$http.get("tree_author?index=" + indexname).then(res => {
           const data = res.data;
           if (data.length > 0) {
@@ -455,11 +464,13 @@ export default {
       }
       if (data.type === "publisher") {
         indexname = data.label;
-        let n = this.data[2].children.findIndex((itme, index) => {
-          if (itme.label == data.label) {
-            return index;
+        let n;
+        for (let i = 0, l = this.data[2].children.length; i < l; i++) {
+          // console.log(this.data[2].children[i].label, indexname);
+          if (this.data[2].children[i].label == indexname) {
+            n = i;
           }
-        });
+        }
         this.$http.get("tree_publisher?index=" + indexname).then(res => {
           const data = res.data;
           if (data.length > 0) {
@@ -471,11 +482,13 @@ export default {
       }
       if (data.type === "affiliation") {
         indexname = data.label;
-        let n = this.data[1].children.findIndex((itme, index) => {
-          if (itme.label == data.label) {
-            return index;
+        let n;
+        for (let i = 0, l = this.data[1].children.length; i < l; i++) {
+          // console.log(this.data[1].children[i].label, indexname);
+          if (this.data[1].children[i].label == indexname) {
+            n = i;
           }
-        });
+        }
         this.$http.get("tree_affiliation?index=" + indexname).then(res => {
           const data = res.data;
           if (data.length > 0) {

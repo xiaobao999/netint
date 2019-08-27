@@ -1117,6 +1117,14 @@
     ],
     "tree_author": [
         {
+            "index": "a",
+            "name": "Anil K. Jain",
+            "label": "Anil K. Jain",
+            "id": 20,
+            "type": "authornode",
+            "affiliation": "Google"
+        },
+        {
             "index": "G",
             "name": "Geoffrey E. Hinton",
             "label": "Geoffrey E. Hinton(Google)",
