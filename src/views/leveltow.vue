@@ -5,8 +5,11 @@
         <el-card class="box-card">
           <div class="card_title">
             <h2 class="bluesize">
-              <span class="iconfont iconsousuoshouyeqietuzuozhe"></span>
-              <span>作者</span>
+              <span class="iconfont iconsousuoshouyeqietuzuozhe" v-if="state=='author'"></span>
+              <span class="iconfont iconsousuoshouyeqietuzhuti" v-if="state=='theme'"></span>
+              <span class="iconfont iconsousuoshouyeqietuchubanshe" v-if="state=='publication'"></span>
+              <span class="iconfont iconsousuoshouyeqietujigou" v-if="state=='mechanism'"></span>
+              <span>{{name}}</span>
             </h2>
             <span>原文下载</span>
           </div>
@@ -54,8 +57,8 @@
       </div>
     </div>
     <div class="article_list">
-      <el-tabs v-model="activeName2" type="card" @tab-click="handleClick">
-        <el-tab-pane label="参考文献" name="first">
+      <el-tabs v-model="activeName2" type="card">
+        <el-tab-pane label="参考文献" name="first" class="my_tab_pane">
           <div class="left">
             <h2 class="bluesize">
               <span class="iconfont iconshijianbiaoyangshitubiao"></span>
@@ -63,13 +66,14 @@
             </h2>
             <div class="block">
               <span class="demonstration"></span>
-              <el-date-picker
-                v-model="value1"
-                type="daterange"
-                range-separator="至"
-                start-placeholder="开始日期"
-                end-placeholder="结束日期"
-              ></el-date-picker>
+              <el-select v-model="value" placeholder="请选择">
+                <el-option
+                  v-for="item in options"
+                  :key="item.value"
+                  :label="item.label"
+                  :value="item.value"
+                ></el-option>
+              </el-select>
             </div>
             <!-- 左侧信息详情模块 -->
             <left-list @msgname="getmsg" v-for="(item,i) in leftlist" :key="i" :state="item"></left-list>
@@ -101,7 +105,6 @@
 <style lang="less">
 .article_main {
   background-color: #f6f6f6;
-  display: flex;
   flex-direction: column;
   width: 80%;
   margin: 0 auto;
@@ -132,6 +135,19 @@
 .article_list {
   flex: 1;
 }
+.my_tab_pane {
+  .el-select {
+    width: 100%;
+  }
+  display: flex !important;
+  .left {
+    flex: 1.3 !important;
+  }
+  .center {
+    flex: 3;
+    margin-left: 20px;
+  }
+}
 .article_analysis {
   display: flex;
   .l_a_left {
@@ -144,8 +160,10 @@
       border: none;
     }
     .card_title {
-      padding-bottom: 15px;
       border-bottom-color: #e3e3e3;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
   }
   .l_a_right {
@@ -211,12 +229,16 @@
 }
 .title {
   margin: 30px 0;
+  display: flex;
+  justify-content: space-between;
 }
 </style>
 <script>
 export default {
   data() {
     return {
+      name: "",
+      state: "",
       leftlist: [],
       wordlist: [],
       cardlist: [1, 2, 3, 4, 5],
@@ -224,17 +246,58 @@ export default {
       valueselect: "",
       activeName1: "first",
       activeName2: "first",
-      value1: "",
-      value2: "",
       command: "排序方式",
-      val: ""
+      val: "",
+      // 下拉框
+      options: [
+        {
+          value: "2019",
+          label: "2019年"
+        },
+        {
+          value: "2018",
+          label: "2018年"
+        },
+        {
+          value: "2017",
+          label: "2017年"
+        },
+        {
+          value: "2016",
+          label: "2016年"
+        },
+        {
+          value: "2015",
+          label: "2015年"
+        }
+      ],
+      value: ""
     };
   },
   mounted() {
+    this.geturl();
     this.drawLine1();
     this.getdata();
   },
   methods: {
+    //获取URL穿参
+    async geturl() {
+      const Url = this.$route.hash;
+      let str = Url.slice(1);
+      str = str.split("=");
+      //console.log(str);
+      this.state = str[0];
+      const res = await this.$http.get(`${str[0]}`);
+      if (res.status == 200) {
+        const list = res.data.list;
+        const obj = list.find(function(item) {
+          if (item.id == str[1]) {
+            return item;
+          }
+        });
+        this.name = obj.name;
+      }
+    },
     handleClick(tab) {
       var that = this;
       if (tab.index == 1) {

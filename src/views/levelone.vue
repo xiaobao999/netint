@@ -141,11 +141,12 @@ export default {
       this.authorlist = res.data.list;
       this.msg = res.data.msg;
       this.Total = res.data.Total;
-      console.log(res.data);
+      //console.log(res.data);
     },
     goarticle(id) {
+      const Url = this.$route.name;
       this.$router.push({
-        path: `authordetails?${id}`
+        path: `/leveltow#${this.state}=${id}`
       });
     }
   }

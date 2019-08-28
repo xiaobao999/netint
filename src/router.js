@@ -6,7 +6,7 @@ import Literature from './views/literature'
 import LevelOne from './views/levelone'
 //import Article from './views/article'
 import Visualization from './views/visualization'
-//import Authordetails from './views/authordetails'
+import LevelTow from './views/leveltow'
 //import Articledetails from './views/articledetails'
 
 Vue.use(Router)
@@ -20,7 +20,7 @@ export default new Router({
     component: Home
   }, {
     path: '/',
-    name: 'home',
+    name: 'index',
     component: Index,
     children: [{
         path: '/literature',
@@ -51,6 +51,11 @@ export default new Router({
         path: '/visualization',
         name: 'visualization',
         component: Visualization
+      },
+      {
+        path: 'leveltow',
+        name: 'leveltow',
+        component: LevelTow,
       }
     ]
   }]
