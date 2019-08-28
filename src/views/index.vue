@@ -9,11 +9,6 @@
         </ul>
         <div class="search_head">
           <el-input placeholder="请输入内容" v-model="input" class="input_with_select">
-            <el-select v-model="select" slot="prepend" placeholder="请选择">
-              <el-option label="文献" value="1"></el-option>
-              <el-option label="作者" value="2"></el-option>
-              <el-option label="机构" value="3"></el-option>
-            </el-select>
             <el-button slot="append" icon="el-icon-search"></el-button>
           </el-input>
         </div>
@@ -51,36 +46,24 @@ export default {
       keywordlist: ["关键字啊", "关键字"],
       articlcontent:
         "Abstract 2273: Serum choline, methionine, betaine, dimethylglycine, and trimethylamine-N-oxide in relation to pancreatic cancer risk in two nested case-control studies in Asian populations",
-      options: [
-        {
-          value: "选项1",
-          label: "黄金糕"
-        },
-        {
-          value: "选项2",
-          label: "双皮奶"
-        },
-        {
-          value: "选项3",
-          label: "蚵仔煎"
-        },
-        {
-          value: "选项4",
-          label: "龙须面"
-        },
-        {
-          value: "选项5",
-          label: "北京烤鸭"
-        }
-      ],
       valueselect: ""
     };
   },
   methods: {
+    getUrl() {
+      const Url = this.$route.hash;
+      this.input = Url;
+      console.log(this.$route);
+    },
     gohome() {
       this.$router.push({
-        name: "home"
+        path: `/`
       });
+    }
+  },
+  watch: {
+    $route() {
+      this.input = this.$route.hash;
     }
   }
 };

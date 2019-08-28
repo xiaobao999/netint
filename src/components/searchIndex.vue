@@ -4,11 +4,6 @@
       <img src="../assets/搜索页大logo.png" />
       <div style="margin-top: 15px;width:800px; border:2px solid #007398;">
         <el-input placeholder="请输入内容" v-model="input" class="input_with_select">
-          <!-- <el-select v-model="select" slot="prepend" placeholder>
-            <el-option label="文献" value="1"></el-option>
-            <el-option label="作者" value="2"></el-option>
-            <el-option label="主题" value="3"></el-option>
-          </el-select>-->
           <el-button slot="append" icon="el-icon-search" @click="articledetails"></el-button>
         </el-input>
       </div>
@@ -75,8 +70,7 @@ export default {
   data() {
     return {
       input: "",
-      select: "1",
-      articledetails: ""
+      select: "1"
     };
   },
   methods: {
@@ -93,6 +87,12 @@ export default {
     literature() {
       this.$router.push({
         name: "literature"
+      });
+    },
+    articledetails() {
+      //console.log(this.input);
+      this.$router.push({
+        path: `levelthree#${this.input}`
       });
     }
   }

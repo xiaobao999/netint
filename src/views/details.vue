@@ -67,6 +67,7 @@ export default {
       command: "请选择",
       val: ""
     };
+    levelthree
   },
   created() {
     this.getdata();

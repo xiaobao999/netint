@@ -2,21 +2,21 @@
   <el-card class="box-card">
     <div class="card_title">
       <h2 class="bluesize">
-        <span>{{msg}}</span>
+        <span @click="golevelthree()">{{msg}}</span>
       </h2>
       <span>原文下载</span>
     </div>
     <ul class="writer">
-      <li v-for="(item,i) in writerlist" :key="i" @click="goarticle">{{item}}</li>
+      <li v-for="(item,i) in writerlist" :key="i" @click="golevelthree()">{{item}}</li>
       <li @click="writermore">{{morewrite}}</li>
     </ul>
     <ul class="mechanism">
-      <li v-for="(item,i) in mechanismlist" :key="i" @click="goarticle">{{item}}</li>
+      <li v-for="(item,i) in mechanismlist" :key="i" @click="golevelthree()">{{item}}</li>
       <li @click="mechanismmore">{{moremechanism}}</li>
     </ul>
     <ul class="mechanism">
-      <li v-for="(item,i) in keywordlist" :key="i" @click="goarticledetails">
-        <el-tag type="info">{{item}}</el-tag>
+      <li v-for="(item,i) in keywordlist" :key="i">
+        <el-tag type="info" @click="golevelthree()">{{item}}</el-tag>
       </li>
       <li>
         <el-tag type="info" @click="keywordlistmmore">{{morekeyword}}</el-tag>
@@ -130,14 +130,9 @@ export default {
         this.keywordlist.splice(5);
       }
     },
-    goarticledetails() {
+    golevelthree() {
       this.$router.push({
-        name: "articledetails"
-      });
-    },
-    goarticle() {
-      this.$router.push({
-        name: "authordetails"
+        path: `details`
       });
     }
   }
@@ -180,17 +175,17 @@ export default {
     }
   }
 }
-.card_title{
+.card_title {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  span:hover{
+  span:hover {
     color: #333;
     cursor: pointer;
   }
-  .bluesize{
-    span:hover{
-       color: #ef8338;
+  .bluesize {
+    span:hover {
+      color: #ef8338;
     }
   }
 }
