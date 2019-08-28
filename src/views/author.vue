@@ -120,7 +120,7 @@ export default {
       });
     },
     async getauthorlist() {
-      const res = await this.$http.get(`http://localhost:53000/authorshow`);
+      const res = await this.$http.get(`authorshow`);
       this.authorlist = res.data;
     }
   }

@@ -18,7 +18,7 @@
             ></el-date-picker>
           </div>
           <!-- 左侧信息详情模块 -->
-          <left-list @msgname="getmsg"></left-list>
+          <left-list @msgname="getmsg" v-for="(item,i) in leftlist" :key="i" :state="item"></left-list>
         </div>
         <!-- 中间详情 -->
         <div class="center">
@@ -37,18 +37,13 @@
               </el-dropdown-menu>
             </el-dropdown>
           </div>
-          <my-card :val="val"></my-card>
-          <my-card :val="val"></my-card>
+          <my-card :val="val" v-for="(item,i) in cardlist" :key="i"></my-card>
           <el-pagination background layout="prev, pager, next" :total="300"></el-pagination>
         </div>
         <div class="right">
           <h2 class="bluesize" style=" text-align: center;">热门话题</h2>
-          <div class="righr_word">
-            <el-tag type="info">关键字</el-tag>
-            <el-tag type="info">关键字</el-tag>
-            <el-tag type="info">关键字</el-tag>
-            <el-tag type="info">关键字</el-tag>
-            <el-tag type="info">关键字</el-tag>
+          <div class="right_word">
+            <el-tag type="info" v-for="(item,i) in wordlist" :key="i">{{item}}</el-tag>
           </div>
           <right-list :val="val"></right-list>
         </div>
@@ -61,6 +56,9 @@
 export default {
   data() {
     return {
+      leftlist: [],
+      wordlist: [],
+      cardlist: [1, 2, 3, 4, 5],
       activeName1: "first",
       input: "",
       select: "文献",
@@ -70,6 +68,9 @@ export default {
       val: ""
     };
   },
+  created() {
+    this.getdata();
+  },
   methods: {
     handleCommand(command) {
       this.command = command;
@@ -77,6 +78,14 @@ export default {
     handleClick() {},
     getmsg(val) {
       this.val = val;
+    },
+    async getdata() {
+      const res = await this.$http.get("articledetails");
+      if (res.status == 200) {
+        const { data } = res;
+        this.leftlist = data.leftlist;
+        this.wordlist = data.wordlist;
+      }
     }
   }
 };
@@ -135,7 +144,7 @@ export default {
 
 .right {
   flex: 1;
-  .righr_word {
+  .right_word {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 20px;

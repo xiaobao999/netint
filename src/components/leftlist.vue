@@ -36,10 +36,9 @@
 <script>
 export default {
   name: "LeftList",
-  props: [],
+  props: ["state"],
   data() {
     return {
-      state: "",
       checked1: "",
       morbtn: "加载更多",
       le_d: ""
@@ -57,7 +56,7 @@ export default {
       if (res.status == 200) {
         const { data } = res;
         //publication  author  theme  mechanism
-        this.state = "theme";
+        //this.state = "theme";
         this.le_d = data.le_d;
       }
     },

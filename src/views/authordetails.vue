@@ -72,7 +72,7 @@
               ></el-date-picker>
             </div>
             <!-- 左侧信息详情模块 -->
-            <left-list @msgname="getmsg"></left-list>
+            <left-list @msgname="getmsg" v-for="(item,i) in leftlist" :key="i" :state="item"></left-list>
           </div>
           <!-- 中间详情 -->
           <div class="center">
@@ -91,7 +91,7 @@
                 </el-dropdown-menu>
               </el-dropdown>
             </div>
-            <my-card :val="val"></my-card>
+            <my-card :val="val" v-for="(item,i) in cardlist" :key="i"></my-card>
           </div>
         </el-tab-pane>
       </el-tabs>
@@ -217,6 +217,9 @@
 export default {
   data() {
     return {
+      leftlist: [],
+      wordlist: [],
+      cardlist: [1, 2, 3, 4, 5],
       articlcontent: "",
       valueselect: "",
       activeName1: "first",
@@ -229,6 +232,7 @@ export default {
   },
   mounted() {
     this.drawLine1();
+    this.getdata();
   },
   methods: {
     handleClick(tab) {
@@ -244,6 +248,14 @@ export default {
     },
     getmsg(val) {
       this.val = val;
+    },
+    async getdata() {
+      const res = await this.$http.get("articledetails");
+      if (res.status == 200) {
+        const { data } = res;
+        this.leftlist = data.leftlist;
+        this.wordlist = data.wordlist;
+      }
     },
     drawLine2() {
       let myChart2 = this.$echarts.init(document.getElementById("myChart2"));
@@ -408,41 +420,6 @@ export default {
             ]
           }
         ]
-      });
-    },
-    writermore() {
-      for (let i = 0; i < 5; i++) {
-        this.writerlist.push("王五");
-      }
-    },
-    mechanismmore() {
-      for (let i = 0; i < 5; i++) {
-        this.mechanismlist.push("戊");
-      }
-    },
-    keywordlistmmore() {
-      for (let i = 0; i < 5; i++) {
-        this.keywordlist.push("更多的关键字");
-      }
-    },
-    le_d_more() {
-      this.le_d = [
-        { name: "张三", num: "4.8万" },
-        { name: "李四", num: "4.8万" },
-        { name: "张三", num: "4.8万" },
-        { name: "张三", num: "4.8万" },
-        { name: "李四", num: "4.8万" },
-        { name: "张三", num: "4.8万" }
-      ];
-    },
-    goarticle() {
-      this.$router.push({
-        name: "authordetails"
-      });
-    },
-    goarticledetails() {
-      this.$router.push({
-        name: "articledetails"
       });
     },
     drawLine1() {
