@@ -12,7 +12,7 @@
         </h2>
         <h2 class="bluesize" v-if="state=='publication'">
           <span class="iconfont iconsousuoshouyeqietuchubanshe"></span>
-          <span>出版物分析</span>
+          <span>文献分析</span>
         </h2>
         <h2 class="bluesize" v-if="state=='mechanism'">
           <span class="iconfont iconsousuoshouyeqietujigou"></span>
@@ -30,10 +30,10 @@
           </div>
           <div>
             <span>{{Total}}</span>
-            <span v-if="state=='author'">合作作者总数</span>
-            <span v-if="state=='theme'">热门主题总数</span>
-            <span v-if="state=='publication'">出版物总数</span>
-            <span v-if="state=='mechanism'">机构总数</span>
+            <span v-if="state=='author'">合作作者</span>
+            <span v-if="state=='theme'">热门主题</span>
+            <span v-if="state=='publication'">热门文献</span>
+            <span v-if="state=='mechanism'">主要机构</span>
           </div>
         </div>
       </div>
@@ -41,7 +41,7 @@
     <div class="author_list">
       <h2 class="bluesize" v-if="state=='author'">主要作者</h2>
       <h2 class="bluesize" v-if="state=='theme'">热门主题</h2>
-      <h2 class="bluesize" v-if="state=='publication'">主要出版物</h2>
+      <h2 class="bluesize" v-if="state=='publication'">主要文献</h2>
       <h2 class="bluesize" v-if="state=='mechanism'">主要机构</h2>
       <ul>
         <li

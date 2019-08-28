@@ -22,9 +22,9 @@
     <ul class="bottom">
       <li @click="literature">
         <div>
-          <span class="iconfont iconsousuoshouyeqietuwenxian"></span>
+          <span class="iconfont iconsousuoshouyeqietuchubanshe"></span>
         </div>
-        <h3>文献</h3>
+        <h3>出版物</h3>
         <span>20,045,213</span>
       </li>
       <li @click="author('author')">
@@ -43,9 +43,9 @@
       </li>
       <li @click="author('publication')">
         <div>
-          <span class="iconfont iconsousuoshouyeqietuchubanshe"></span>
+          <span class="iconfont iconsousuoshouyeqietuwenxian"></span>
         </div>
-        <h3>出版物</h3>
+        <h3>文献</h3>
         <span>225,213</span>
       </li>
       <li @click="author('mechanism')">

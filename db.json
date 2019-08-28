@@ -1196,8 +1196,8 @@
         }
     ],
     "author": {
-        "Total":"52143",
-        "msg":"Microsoft Academic使用各种信号识别单个作者，例如姓名，从属关系，共同作者和出版物主题。我们使用大规模的实体链接从6200万个名字中提取超过2亿的独特作者。您可以使用我们的数据运行您自己的复杂学术分析。请通过下面的反馈表联系我们，了解有关访问 Microsoft Academic Graph的信息",
+        "Total": "52143",
+        "msg": "Microsoft Academic使用各种信号识别单个作者，例如姓名，从属关系，共同作者和出版物主题。我们使用大规模的实体链接从6200万个名字中提取超过2亿的独特作者。您可以使用我们的数据运行您自己的复杂学术分析。请通过下面的反馈表联系我们，了解有关访问 Microsoft Academic Graph的信息",
         "list": [
             {
                 "name": "Eric S. Lander",
@@ -1801,9 +1801,9 @@
             }
         ]
     },
-    "theme":{
-        "Total":"23715",
-        "msg":"Microsoft Academic使用人工智能和对内容的语义理解来标记具有研究领域或主题的论文。主题以非互斥的层次结构组织，具有19个顶级学习领域。您可以使用我们的数据运行您自己的复杂学术分析。请通过下面的反馈表联系我们，了解有关访问 Microsoft Academic Graph的信息。",
+    "theme": {
+        "Total": "23715",
+        "msg": "Microsoft Academic使用人工智能和对内容的语义理解来标记具有研究领域或主题的论文。主题以非互斥的层次结构组织，具有19个顶级学习领域。您可以使用我们的数据运行您自己的复杂学术分析。请通过下面的反馈表联系我们，了解有关访问 Microsoft Academic Graph的信息。",
         "list": [
             {
                 "name": "CVPR",
@@ -2407,9 +2407,9 @@
             }
         ]
     },
-    "mechanism":{
-        "Total":"10932",
-        "msg":"Microsoft Academic从出版物及其元数据中自动提取作者关联信息。作者的隶属关系列在出版时。因此，具有多个隶属关系的作者可能具有多个简档。作者可以使用声明功能在一个配置文件下合并其出版物。您可以使用我们的数据运行您自己的复杂学术分析。请通过下面的反馈表联系我们，了解有关访问 Microsoft Academic Graph的信息。",
+    "mechanism": {
+        "Total": "10932",
+        "msg": "Microsoft Academic从出版物及其元数据中自动提取作者关联信息。作者的隶属关系列在出版时。因此，具有多个隶属关系的作者可能具有多个简档。作者可以使用声明功能在一个配置文件下合并其出版物。您可以使用我们的数据运行您自己的复杂学术分析。请通过下面的反馈表联系我们，了解有关访问 Microsoft Academic Graph的信息。",
         "list": [
             {
                 "name": "Harvard University",
@@ -3013,9 +3013,9 @@
             }
         ]
     },
-    "publication":{
-        "Total":"15320",
-        "msg":"Microsoft Academic从出版物及其元数据中自动提取有关出版物场所的信息，例如期刊。Microsoft Academic对各种学科的期刊进行索引。如果可以在网络上轻松发现期刊，则更有可能将其纳入Microsoft Academic。您可以使用我们的数据运行您自己的复杂学术分析。请通过下面的反馈表联系我们，了解有关访问 Microsoft Academic Graph的信息。",
+    "publication": {
+        "Total": "15320",
+        "msg": "Microsoft Academic从出版物及其元数据中自动提取有关出版物场所的信息，例如期刊。Microsoft Academic对各种学科的期刊进行索引。如果可以在网络上轻松发现期刊，则更有可能将其纳入Microsoft Academic。您可以使用我们的数据运行您自己的复杂学术分析。请通过下面的反馈表联系我们，了解有关访问 Microsoft Academic Graph的信息。",
         "list": [
             {
                 "name": "Nature",
@@ -3775,6 +3775,289 @@
             "修真",
             "无根树",
             "文化"
+        ]
+    },
+    "chubanwu": {
+        "count":227640832,
+        "baifenbi": [
+            {
+                "graphVersion": "makes-2019-08-22-prod-new-search",
+                "publicationType": 4,
+                "count": 2635288
+            },
+            {
+                "graphVersion": "makes-2019-08-22-prod-new-search",
+                "publicationType": 5,
+                "count": 1183316
+            },
+            {
+                "graphVersion": "makes-2019-08-22-prod-new-search",
+                "publicationType": 3,
+                "count": 4481877
+            },
+            {
+                "graphVersion": "makes-2019-08-22-prod-new-search",
+                "publicationType": 2,
+                "count": 83406649
+            },
+            {
+                "graphVersion": "makes-2019-08-22-prod-new-search",
+                "publicationType": 1,
+                "count": 83406649
+            },
+            {
+                "graphVersion": "makes-2019-08-22-prod-new-search",
+                "publicationType": 0,
+                "count": 52527053
+            }
+        ],
+        "topauthors": [
+            {
+                "name": "Eric S. Lander",
+                "id": "2557216553",
+                "lat": 0.0,
+                "lon": 0.0
+            },
+            {
+                "name": "Douglas G. Altman",
+                "id": "1937107987",
+                "lat": 0.0,
+                "lon": 0.0
+            },
+            {
+                "name": "Walter C. Willett",
+                "id": "1793908362",
+                "lat": 0.0,
+                "lon": 0.0
+            },
+            {
+                "name": "Albert Hofman",
+                "id": "2251992767",
+                "lat": 0.0,
+                "lon": 0.0
+            },
+            {
+                "name": "Hagop M. Kantarjian",
+                "id": "1874266680",
+                "lat": 0.0,
+                "lon": 0.0
+            },
+            {
+                "name": "Yoshua Bengio",
+                "id": "161269817",
+                "lat": 0.0,
+                "lon": 0.0
+            },
+            {
+                "name": "Zhong Lin Wang",
+                "id": "2113800519",
+                "lat": 0.0,
+                "lon": 0.0
+            },
+            {
+                "name": "George M. Sheldrick",
+                "id": "220794011",
+                "lat": 0.0,
+                "lon": 0.0
+            },
+            {
+                "name": "Michael Grätzel",
+                "id": "2012626572",
+                "lat": 0.0,
+                "lon": 0.0
+            },
+            {
+                "name": "Frank B. Hu",
+                "id": "2104358674",
+                "lat": 0.0,
+                "lon": 0.0
+            }
+        ],
+        "topinstitutions": [
+            {
+                "name": "Harvard University",
+                "id": "136199984",
+                "lat": 42.374439239501953,
+                "lon": -71.116943359375
+            },
+            {
+                "name": "Chinese Academy of Sciences",
+                "id": "19820366",
+                "lat": 39.681560516357422,
+                "lon": -75.751884460449219
+            },
+            {
+                "name": "Max Planck Society",
+                "id": "149899117",
+                "lat": 48.141170501708984,
+                "lon": 11.581835746765137
+            },
+            {
+                "name": "Stanford University",
+                "id": "97018004",
+                "lat": 37.428230285644531,
+                "lon": -122.16886138916016
+            },
+            {
+                "name": "University of Michigan",
+                "id": "27837315",
+                "lat": 42.282779693603516,
+                "lon": -83.7347183227539
+            },
+            {
+                "name": "University of Washington",
+                "id": "201448701",
+                "lat": 47.654998779296875,
+                "lon": -122.30799865722656
+            },
+            {
+                "name": "Massachusetts Institute of Technology",
+                "id": "63966007",
+                "lat": 42.359821319580078,
+                "lon": -71.092109680175781
+            },
+            {
+                "name": "National Institutes of Health",
+                "id": "1299303238",
+                "lat": 39.000442504882812,
+                "lon": -77.1023941040039
+            },
+            {
+                "name": "Centre national de la recherche scientifique",
+                "id": "1294671590",
+                "lat": 48.847663879394531,
+                "lon": 2.2640340328216553
+            },
+            {
+                "name": "Johns Hopkins University",
+                "id": "145311948",
+                "lat": 39.328891754150391,
+                "lon": -76.620277404785156
+            }
+        ],
+        "topjournals": [
+            {
+                "name": "Nature",
+                "id": "137773608",
+                "lat": 0.0,
+                "lon": 0.0
+            },
+            {
+                "name": "Proceedings of the National Academy of Sciences of the United States of America",
+                "id": "125754415",
+                "lat": 0.0,
+                "lon": 0.0
+            },
+            {
+                "name": "Science",
+                "id": "3880285",
+                "lat": 0.0,
+                "lon": 0.0
+            },
+            {
+                "name": "PLOS ONE",
+                "id": "202381698",
+                "lat": 0.0,
+                "lon": 0.0
+            },
+            {
+                "name": "The New England Journal of Medicine",
+                "id": "62468778",
+                "lat": 0.0,
+                "lon": 0.0
+            },
+            {
+                "name": "Physical Review Letters",
+                "id": "24807848",
+                "lat": 0.0,
+                "lon": 0.0
+            },
+            {
+                "name": "Journal of Biological Chemistry",
+                "id": "140251998",
+                "lat": 0.0,
+                "lon": 0.0
+            },
+            {
+                "name": "Journal of the American Chemical Society",
+                "id": "111155417",
+                "lat": 0.0,
+                "lon": 0.0
+            },
+            {
+                "name": "Applied Physics Letters",
+                "id": "105243760",
+                "lat": 0.0,
+                "lon": 0.0
+            },
+            {
+                "name": "The Lancet",
+                "id": "49861241",
+                "lat": 0.0,
+                "lon": 0.0
+            }
+        ],
+        "topconferences": [
+            {
+                "name": "CVPR",
+                "id": "1158167855",
+                "lat": 0.0,
+                "lon": 0.0
+            },
+            {
+                "name": "ICRA",
+                "id": "1163902177",
+                "lat": 0.0,
+                "lon": 0.0
+            },
+            {
+                "name": "ICASSP",
+                "id": "1121227772",
+                "lat": 0.0,
+                "lon": 0.0
+            },
+            {
+                "name": "CHI",
+                "id": "1163450153",
+                "lat": 0.0,
+                "lon": 0.0
+            },
+            {
+                "name": "ICC",
+                "id": "1130451194",
+                "lat": 0.0,
+                "lon": 0.0
+            },
+            {
+                "name": "NeurIPS",
+                "id": "1127325140",
+                "lat": 0.0,
+                "lon": 0.0
+            },
+            {
+                "name": "VTC",
+                "id": "1176978676",
+                "lat": 0.0,
+                "lon": 0.0
+            },
+            {
+                "name": "SIGGRAPH",
+                "id": "1164321581",
+                "lat": 0.0,
+                "lon": 0.0
+            },
+            {
+                "name": "ICCV",
+                "id": "1164975091",
+                "lat": 0.0,
+                "lon": 0.0
+            },
+            {
+                "name": "SMC",
+                "id": "1170695740",
+                "lat": 0.0,
+                "lon": 0.0
+            }
         ]
     }
 }

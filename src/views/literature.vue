@@ -32,57 +32,57 @@
     <div class="literature_total">
       <div class="literature_total_title">
         <b class="bluesize">文献总数</b>
-        <span>共{{ cnt }}条相关结果</span>
+        <span>共{{ count }}条相关结果</span>
       </div>
       <div class="literature_total_show">
         <div class="literature_total_color">
+          <!-- <div style="flex:{{}}"></div> -->
+          <div v-for="(item,i) in proportion" :key="i" :style="{flex:item}"></div>
+          <!-- <div></div>
           <div></div>
           <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+          <div></div>-->
         </div>
         <div class="literature_total_publication">
           <div>
             <i></i>
             <div>
-              <div>出版物1</div>
+              <div>预定</div>
               <div>20%</div>
             </div>
           </div>
           <div>
             <i></i>
             <div>
-              <div>出版物2</div>
+              <div>书章</div>
               <div>20%</div>
             </div>
           </div>
           <div>
             <i></i>
             <div>
-              <div>出版物3</div>
+              <div>会议</div>
               <div>20%</div>
             </div>
           </div>
           <div>
             <i></i>
             <div>
-              <div>出版物4</div>
+              <div>其他</div>
               <div>20%</div>
             </div>
           </div>
           <div>
             <i></i>
             <div>
-              <div>出版物5</div>
+              <div>专利</div>
               <div>20%</div>
             </div>
           </div>
           <div>
             <i></i>
             <div>
-              <div>出版物6</div>
+              <div>期刊</div>
               <div>20%</div>
             </div>
           </div>
@@ -93,41 +93,41 @@
       <li>
         <h2 class="bluesize">主要作者</h2>
         <dl>
-          <dd>1.文本内容</dd>
-          <dd>1.文本内容</dd>
-          <dd>1.文本内容</dd>
-          <dd>1.文本内容</dd>
-          <dd>1.文本内容</dd>
+          <dd
+            v-for="(item,i) in topauthors"
+            :key="i"
+            @click="goarticle('author',item.id)"
+          >{{item.name}}</dd>
         </dl>
       </li>
       <li>
         <h2 class="bluesize">主要机构</h2>
         <dl>
-          <dd>1.文本内容</dd>
-          <dd>1.文本内容</dd>
-          <dd>1.文本内容</dd>
-          <dd>1.文本内容</dd>
-          <dd>1.文本内容</dd>
+          <dd
+            v-for="(item,i) in topinstitutions"
+            :key="i"
+            @click="goarticle('theme',item.id)"
+          >{{item.name}}</dd>
         </dl>
       </li>
       <li>
         <h2 class="bluesize">重要主题</h2>
         <dl>
-          <dd>1.文本内容</dd>
-          <dd>1.文本内容</dd>
-          <dd>1.文本内容</dd>
-          <dd>1.文本内容</dd>
-          <dd>1.文本内容</dd>
+          <dd
+            v-for="(item,i) in topjournals"
+            :key="i"
+            @click="goarticle('publication',item.id)"
+          >{{item.name}}</dd>
         </dl>
       </li>
       <li>
-        <h2 class="bluesize">主要出版物</h2>
+        <h2 class="bluesize">主要文献</h2>
         <dl>
-          <dd>1.文本内容</dd>
-          <dd>1.文本内容</dd>
-          <dd>1.文本内容</dd>
-          <dd>1.文本内容</dd>
-          <dd>1.文本内容</dd>
+          <dd
+            v-for="(item,i) in topconferences"
+            :key="i"
+            @click="goarticle('mechanism',item.id)"
+          >{{item.name}}</dd>
         </dl>
       </li>
     </ul>
@@ -210,27 +210,21 @@
       width: 100%;
       display: flex;
       div:nth-child(1) {
-        flex: 1;
         background-color: #017398;
       }
       div:nth-child(2) {
-        flex: 1;
         background-color: #348fae;
       }
       div:nth-child(3) {
-        flex: 1;
         background-color: #7fbaca;
       }
       div:nth-child(4) {
-        flex: 1;
         background-color: #f6b68a;
       }
       div:nth-child(5) {
-        flex: 1;
         background-color: #f16b12;
       }
       div:nth-child(6) {
-        flex: 1;
         background-color: #6f6f6f;
       }
     }
@@ -300,35 +294,52 @@
 .literature_details dd {
   margin: 15px 0;
 }
+.literature_details dd:hover {
+  color: #ef8338;
+  cursor: pointer;
+}
 </style>
 <script>
 export default {
   created() {
-    this.getJson();
+    this.getdata();
   },
   data() {
     return {
       ulList: [],
-      cnt: 0
+      count: 0,
+      proportion: [],
+      topauthors: [],
+      topinstitutions: [],
+      topjournals: [],
+      topconferences: []
     };
   },
   mounted() {
     this.drawLine();
   },
   methods: {
-    getJson() {
-      this.$http.get("http://localhost:53000/course").then(
-        res => {
-          //console.log(res.data);
-          const data = res.data;
-          this.ulList = data;
-          this.cnt = data[0].id;
-          console.log(this.ulList);
-        },
-        err => {
-          console.log(err, "请求失败");
+    async getdata() {
+      const res = await this.$http.get("chubanwu");
+      if (res.status == 200) {
+        this.proportion = res.data.baifenbi;
+        let arr = [];
+        for (let i = 0, l = res.data.baifenbi.length; i < l; i++) {
+          arr.push(res.data.baifenbi[i].count);
         }
-      );
+        this.proportion = arr;
+        this.topauthors = res.data.topauthors;
+        this.topinstitutions = res.data.topinstitutions;
+        this.topconferences = res.data.topconferences;
+        this.topjournals = res.data.topjournals;
+        this.count = res.data.count;
+      }
+    },
+    //传ID，自己获取点的是什么状态
+    goarticle(state, id) {
+      this.$router.push({
+        path: `/leveltow#${state}=${id}`
+      });
     },
     drawLine() {
       // 基于准备好的dom，初始化echarts实例
