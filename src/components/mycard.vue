@@ -176,6 +176,21 @@ export default {
     }
     .el-tag:hover {
       color: #f46d11;
+      cursor: pointer;
+    }
+  }
+}
+.card_title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  span:hover{
+    color: #333;
+    cursor: pointer;
+  }
+  .bluesize{
+    span:hover{
+       color: #ef8338;
     }
   }
 }
