@@ -92,7 +92,7 @@ export default {
     articledetails() {
       //console.log(this.input);
       this.$router.push({
-        path: `levelthree#${this.input}`
+        path: `details#${this.input}`
       });
     }
   }

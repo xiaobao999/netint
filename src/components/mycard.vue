@@ -132,7 +132,7 @@ export default {
     },
     golevelthree() {
       this.$router.push({
-        path: `details`
+        path: `levelthree`
       });
     }
   }

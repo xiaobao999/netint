@@ -144,7 +144,6 @@ export default {
       //console.log(res.data);
     },
     goarticle(id) {
-      const Url = this.$route.name;
       this.$router.push({
         path: `/leveltow#${this.state}=${id}`
       });
