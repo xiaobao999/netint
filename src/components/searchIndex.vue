@@ -8,7 +8,7 @@
             <el-option label="文献" value="1"></el-option>
             <el-option label="作者" value="2"></el-option>
             <el-option label="主题" value="3"></el-option>
-          </el-select> -->
+          </el-select>-->
           <el-button slot="append" icon="el-icon-search" @click="articledetails"></el-button>
         </el-input>
       </div>
@@ -32,28 +32,28 @@
         <h3>文献</h3>
         <span>20,045,213</span>
       </li>
-      <li @click="author">
+      <li @click="author('author')">
         <div>
           <span class="iconfont iconsousuoshouyeqietuzuozhe"></span>
         </div>
         <h3>作者</h3>
         <span>19,045,213</span>
       </li>
-      <li  @click="articledetails">
+      <li @click="author('theme')">
         <div>
           <span class="iconfont iconsousuoshouyeqietuzhuti"></span>
         </div>
         <h3>主题</h3>
         <span>25,213</span>
       </li>
-      <li @click="authordetails">
+      <li @click="author('publication')">
         <div>
           <span class="iconfont iconsousuoshouyeqietuchubanshe"></span>
         </div>
         <h3>出版物</h3>
         <span>225,213</span>
       </li>
-      <li @click="article">
+      <li @click="author('mechanism')">
         <div>
           <span class="iconfont iconsousuoshouyeqietujigou"></span>
         </div>
@@ -75,7 +75,8 @@ export default {
   data() {
     return {
       input: "",
-      select: "1"
+      select: "1",
+      articledetails: ""
     };
   },
   methods: {
@@ -84,29 +85,14 @@ export default {
         name: "visualization"
       });
     },
-    articledetails() {
+    author(n) {
       this.$router.push({
-        name: "articledetails"
+        path: n
       });
     },
-    authordetails() {
-      this.$router.push({
-        name: "authordetails"
-      });
-    },
-    author(){
-      this.$router.push({
-        name: "author"
-      });
-    },
-    literature(){
+    literature() {
       this.$router.push({
         name: "literature"
-      });
-    },
-    article(){
-      this.$router.push({
-        name: "article"
       });
     }
   }

@@ -3,11 +3,11 @@ import Router from 'vue-router'
 import Home from './views/home'
 import Index from './views/index'
 import Literature from './views/literature'
-import Author from './views/author'
-import Article from './views/article'
+import LevelOne from './views/levelone'
+//import Article from './views/article'
 import Visualization from './views/visualization'
-import Authordetails from './views/authordetails'
-import Articledetails from './views/articledetails'
+//import Authordetails from './views/authordetails'
+//import Articledetails from './views/articledetails'
 
 Vue.use(Router)
 
@@ -30,27 +30,27 @@ export default new Router({
       {
         path: '/author',
         name: 'author',
-        component: Author
+        component: LevelOne,
       },
       {
-        path: '/article',
-        name: 'article',
-        component: Article
+        path: '/theme',
+        name: 'theme',
+        component: LevelOne,
+      },
+      {
+        path: '/mechanism',
+        name: 'mechanism',
+        component: LevelOne,
+      },
+      {
+        path: '/publication',
+        name: 'publication',
+        component: LevelOne,
       },
       {
         path: '/visualization',
         name: 'visualization',
         component: Visualization
-      },
-      {
-        path: '/authordetails',
-        name: 'authordetails',
-        component: Authordetails
-      },
-      {
-        path: '/articledetails',
-        name: 'articledetails',
-        component: Articledetails
       }
     ]
   }]

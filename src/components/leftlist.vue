@@ -55,29 +55,20 @@ export default {
       const res = await this.$http.get("leftlist");
       if (res.status == 200) {
         const { data } = res;
-        //publication  author  theme  mechanism
-        //this.state = "theme";
-        this.le_d = data.le_d;
+        if (data.le_d.length > 3) this.le_d = data.le_d.slice(0, 3);
       }
     },
-    le_d_more() {
+    async le_d_more() {
       if (this.morbtn == "加载更多") {
         this.morbtn = "收起";
-        this.le_d = [
-          { name: "张三", num: "4.8万", checked: "", Percentage: 60 },
-          { name: "李四", num: "4.8万", checked: "", Percentage: 20 },
-          { name: "张三", num: "4.8万", checked: "", Percentage: 80 },
-          { name: "张三", num: "4.8万", checked: "", Percentage: 60 },
-          { name: "李四", num: "4.8万", checked: "", Percentage: 20 },
-          { name: "张三", num: "4.8万", checked: "", Percentage: 80 }
-        ];
+        const res = await this.$http.get("leftlist");
+        if (res.status == 200) {
+          const { data } = res;
+          this.le_d = data.le_d;
+        }
       } else {
         this.morbtn = "加载更多";
-        this.le_d = [
-          { name: "张三", num: "4.8万", checked: "", Percentage: 60 },
-          { name: "李四", num: "4.8万", checked: "", Percentage: 20 },
-          { name: "张三", num: "4.8万", checked: "", Percentage: 80 }
-        ];
+        this.getdata();
       }
     }
   }
