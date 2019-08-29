@@ -15,7 +15,7 @@
           </div>
           <div>
             <span>998716</span>
-            <span>文献总数</span>
+            <span>出版物总数</span>
           </div>
         </div>
         <div>
@@ -31,7 +31,7 @@
     </div>
     <div class="literature_total">
       <div class="literature_total_title">
-        <b class="bluesize">文献总数</b>
+        <b class="bluesize">出版物总数</b>
         <span>共{{ count }}条相关结果</span>
       </div>
       <div class="literature_total_show">
@@ -96,7 +96,7 @@
           <dd
             v-for="(item,i) in topauthors"
             :key="i"
-            @click="goarticle('author',item.id)"
+            @click="goarticle('author',item.id,item.name)"
           >{{item.name}}</dd>
         </dl>
       </li>
@@ -106,7 +106,7 @@
           <dd
             v-for="(item,i) in topinstitutions"
             :key="i"
-            @click="goarticle('theme',item.id)"
+            @click="goarticle('mechanism',item.id,item.name)"
           >{{item.name}}</dd>
         </dl>
       </li>
@@ -116,7 +116,7 @@
           <dd
             v-for="(item,i) in topjournals"
             :key="i"
-            @click="goarticle('publication',item.id)"
+            @click="goarticle('publication',item.id,item.name)"
           >{{item.name}}</dd>
         </dl>
       </li>
@@ -126,7 +126,7 @@
           <dd
             v-for="(item,i) in topconferences"
             :key="i"
-            @click="goarticle('mechanism',item.id)"
+            @click="goarticle('theme',item.id,item.name)"
           >{{item.name}}</dd>
         </dl>
       </li>
@@ -336,7 +336,7 @@ export default {
       }
     },
     //传ID，自己获取点的是什么状态
-    goarticle(state, id) {
+    goarticle(state, id, name) {
       this.$router.push({
         path: `/leveltow#${state}=${id}`
       });

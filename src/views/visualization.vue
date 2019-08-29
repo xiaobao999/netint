@@ -1082,9 +1082,9 @@ export default {
       });
       //todo: 判断是否为作者，出版物，主题词，机构，文献
       //是否需要把json里每个数据都加上一个type属性，然后可以做if判断和小球双击查询判断
-      this.$http.get("author?id=" + this.selectedNodeID).then(res => {
+      this.$http.get("author1?id=" + this.selectedNodeID).then(res => {
         var data = res.data;
-        //console.log(data);
+        console.log(data);
         if (data == "" || data == undefined) return;
         myChart.setOption({
           series: [

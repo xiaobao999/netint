@@ -50,11 +50,11 @@ export default {
     };
   },
   methods: {
-    getUrl() {
-      const Url = this.$route.hash;
-      this.input = Url;
-      console.log(this.$route);
-    },
+    // getUrl() {
+    //   const Url = this.$route.hash;
+    //   this.input = Url;
+    //   console.log(this.$route);
+    // },
     gohome() {
       this.$router.push({
         path: `/`
@@ -62,8 +62,35 @@ export default {
     }
   },
   watch: {
-    $route() {
-      this.input = this.$route.hash;
+    async $route() {
+      const path = this.$route.path;
+      if (path == "/leveltow") {
+        const Url = this.$route.hash;
+        let str = Url.slice(1);
+        str = str.split("=");
+        //console.log(str);
+        this.state = str[0];
+        const res = await this.$http.get(`${str[0]}`);
+        if (res.status == 200) {
+          const list = res.data.list;
+          const obj = list.find(function(item) {
+            if (item.id == str[1]) {
+              return item;
+            }
+          });
+          this.input = obj.name;
+        }
+      }
+      if (
+        path == "/literature" ||
+        path == "/author" ||
+        path == "/theme" ||
+        path == "/mechanism" ||
+        path == "/publication" ||
+        path == "/visualization"
+      ) {
+        this.input = "";
+      }
     }
   }
 };
