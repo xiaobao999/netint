@@ -2,21 +2,21 @@
   <el-card class="box-card">
     <div class="card_title">
       <h2 class="bluesize">
-        <span @click="golevelthree()">{{msg}}</span>
+        <span @click="golevelthree(msg)">{{msg}}</span>
       </h2>
       <span>原文下载</span>
     </div>
     <ul class="writer">
-      <li v-for="(item,i) in writerlist" :key="i" @click="golevelthree()">{{item}}</li>
+      <li v-for="(item,i) in writerlist" :key="i" @click="golevelthree(item)">{{item}}</li>
       <li @click="writermore">{{morewrite}}</li>
     </ul>
     <ul class="mechanism">
-      <li v-for="(item,i) in mechanismlist" :key="i" @click="golevelthree()">{{item}}</li>
+      <li v-for="(item,i) in mechanismlist" :key="i" @click="golevelthree(item)">{{item}}</li>
       <li @click="mechanismmore">{{moremechanism}}</li>
     </ul>
     <ul class="mechanism">
       <li v-for="(item,i) in keywordlist" :key="i">
-        <el-tag type="info" @click="golevelthree()">{{item}}</el-tag>
+        <el-tag type="info" @click="golevelthree(item)">{{item}}</el-tag>
       </li>
       <li>
         <el-tag type="info" @click="keywordlistmmore">{{morekeyword}}</el-tag>
@@ -39,7 +39,7 @@
 <script>
 export default {
   name: "MyCard",
-  props: ["val"],
+  props: ["val", "valclick"],
   data() {
     return {
       msg: "",
@@ -59,6 +59,8 @@ export default {
   },
   watch: {
     async val() {
+      // 接受左侧列表传来的勾选
+      //console.log(this.val, 99999);
       const res = await this.$http.get("articlelist2");
       if (res.status == 200) {
         const { data } = res;
@@ -75,6 +77,9 @@ export default {
         this.moremechanism = data.moremechanism;
         this.morekeyword = data.morekeyword;
       }
+    },
+    valclick() {
+      console.log(this.valclick);
     }
   },
   methods: {
@@ -84,6 +89,7 @@ export default {
         const { data } = res;
         //console.log(data);
         //publication  author  theme  mechanism
+
         this.msg = data.msg;
         this.years = data.years;
         this.cited = data.cited;
@@ -130,9 +136,9 @@ export default {
         this.keywordlist.splice(5);
       }
     },
-    golevelthree() {
+    golevelthree(n) {
       this.$router.push({
-        path: `levelthree`
+        path: `/levelthree#${n}`
       });
     }
   }

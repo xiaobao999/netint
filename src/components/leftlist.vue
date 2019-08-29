@@ -17,7 +17,7 @@
       <span>机构</span>
     </h2>
     <ul class="module_label">
-      <li v-for="(item,i) in le_d" :key="i" @click="passname(item.name)">
+      <li v-for="(item,i) in le_d" :key="i" @click="passname(item)" class="choice">
         <el-checkbox v-model="item.checked"></el-checkbox>
         <div class="details">
           <div>
@@ -39,7 +39,6 @@ export default {
   props: ["state"],
   data() {
     return {
-      checked1: "",
       morbtn: "加载更多",
       le_d: ""
     };
@@ -49,10 +48,15 @@ export default {
   },
   methods: {
     passname(n) {
+      n.checked = !n.checked;
       this.$emit("msgname", n);
     },
     async getdata() {
-      const res = await this.$http.get("leftlist");
+      const Url = this.$route.hash;
+      let str = Url.slice(1);
+      str = str.split("=");
+      const res = await this.$http.get(`leftlist${this.state}/001`);
+      // 判断状态那数据
       if (res.status == 200) {
         const { data } = res;
         if (data.le_d.length > 3) this.le_d = data.le_d.slice(0, 3);
@@ -61,14 +65,15 @@ export default {
     async le_d_more() {
       if (this.morbtn == "加载更多") {
         this.morbtn = "收起";
-        const res = await this.$http.get("leftlist");
+        const res = await this.$http.get(`leftlist${this.state}/001`);
+        // 判断状态那数据
         if (res.status == 200) {
           const { data } = res;
           this.le_d = data.le_d;
         }
       } else {
+        this.le_d = this.le_d.slice(0, 3);
         this.morbtn = "加载更多";
-        this.getdata();
       }
     }
   }
@@ -100,10 +105,17 @@ export default {
     left: 7px;
   }
 }
+.choice :hover .el-progress-bar__inner {
+  background-color: #f46d11 !important;
+}
+.module_label li :hover span {
+  color: #f46d11;
+}
 .module_label {
   li {
     display: flex;
     width: 100%;
+    cursor: pointer;
     .details {
       width: 100%;
       div:nth-child(1) {
@@ -130,5 +142,10 @@ export default {
 }
 .el-progress-bar__inner {
   background-color: #007398 !important;
+}
+</style>
+<style scoped>
+.module_label li .el-button {
+  border: none;
 }
 </style>

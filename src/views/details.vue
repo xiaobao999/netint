@@ -23,7 +23,7 @@
         <!-- 中间详情 -->
         <div class="center">
           <div class="title">
-            <span>共10000条相关结果</span>
+            <span>共{{cardlist.length}}条相关结果</span>
             <el-dropdown @command="handleCommand" trigger="click">
               <span class="el-dropdown-link">
                 {{command}}

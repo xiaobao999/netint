@@ -3641,47 +3641,6 @@
             "《上天梯》"
         ]
     },
-    "leftlist": {
-        "state": "publication",
-        "le_d": [
-            {
-                "name": "张三",
-                "num": "4.8万",
-                "checked": "",
-                "Percentage": 60
-            },
-            {
-                "name": "李四",
-                "num": "4.8万",
-                "checked": "",
-                "Percentage": 20
-            },
-            {
-                "name": "张三",
-                "num": "4.8万",
-                "checked": "",
-                "Percentage": 80
-            },
-            {
-                "name": "张三",
-                "num": "4.8万",
-                "checked": "",
-                "Percentage": 60
-            },
-            {
-                "name": "李四",
-                "num": "4.8万",
-                "checked": "",
-                "Percentage": 20
-            },
-            {
-                "name": "张三",
-                "num": "4.8万",
-                "checked": "",
-                "Percentage": 80
-            }
-        ]
-    },
     "articlelist1": {
         "msg": "《上天梯》",
         "moremechanism": "+5",
@@ -3778,7 +3737,7 @@
         ]
     },
     "chubanwu": {
-        "count":227640832,
+        "count": 227640832,
         "baifenbi": [
             {
                 "graphVersion": "makes-2019-08-22-prod-new-search",
@@ -4059,5 +4018,91 @@
                 "lon": 0.0
             }
         ]
-    }
+    },
+    "leftlistauthor": [
+        {
+            "id": "001",
+            "le_d": [
+                {
+                    "name": "张三",
+                    "num": "4.8万",
+                    "checked": "",
+                    "Percentage": 60
+                },
+                {
+                    "name": "李四",
+                    "num": "4.8万",
+                    "checked": "",
+                    "Percentage": 20
+                },
+                {
+                    "name": "张三",
+                    "num": "4.8万",
+                    "checked": "",
+                    "Percentage": 80
+                },
+                {
+                    "name": "张三",
+                    "num": "4.8万",
+                    "checked": "",
+                    "Percentage": 60
+                },
+                {
+                    "name": "李四",
+                    "num": "4.8万",
+                    "checked": "",
+                    "Percentage": 20
+                },
+                {
+                    "name": "张三",
+                    "num": "4.8万",
+                    "checked": "",
+                    "Percentage": 80
+                }
+            ]
+        }
+    ],
+    "leftlistpublication": [
+        {
+            "id": "001",
+            "le_d": [
+                {
+                    "name": "张三",
+                    "num": "4.8万",
+                    "checked": "",
+                    "Percentage": 60
+                },
+                {
+                    "name": "李四",
+                    "num": "4.8万",
+                    "checked": "",
+                    "Percentage": 20
+                },
+                {
+                    "name": "张三",
+                    "num": "4.8万",
+                    "checked": "",
+                    "Percentage": 80
+                },
+                {
+                    "name": "张三",
+                    "num": "4.8万",
+                    "checked": "",
+                    "Percentage": 60
+                },
+                {
+                    "name": "李四",
+                    "num": "4.8万",
+                    "checked": "",
+                    "Percentage": 20
+                },
+                {
+                    "name": "张三",
+                    "num": "4.8万",
+                    "checked": "",
+                    "Percentage": 80
+                }
+            ]
+        }
+    ]
 }

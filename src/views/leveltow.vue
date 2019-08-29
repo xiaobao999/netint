@@ -81,7 +81,7 @@
           <!-- 中间详情 -->
           <div class="center">
             <div class="title">
-              <span>共10000条相关结果</span>
+              <span>共{{cardlist.length}}条相关结果</span>
               <el-dropdown @command="handleCommand" trigger="click">
                 <span class="el-dropdown-link">
                   {{command}}
@@ -240,7 +240,7 @@ export default {
       name: "",
       state: "",
       leftlist: [],
-      wordlist: [],
+      //wordlist: [],
       cardlist: [1, 2, 3, 4, 5],
       articlcontent: "",
       valueselect: "",
@@ -309,6 +309,7 @@ export default {
     handleCommand(command) {
       this.command = command;
     },
+    //左侧列表传来的对象
     getmsg(val) {
       this.val = val;
     },
@@ -317,7 +318,7 @@ export default {
       if (res.status == 200) {
         const { data } = res;
         this.leftlist = data.leftlist;
-        this.wordlist = data.wordlist;
+        // console.log(this.leftlist);
       }
     },
     drawLine2() {

@@ -91,6 +91,11 @@ export default {
       ) {
         this.input = "";
       }
+      if (path == "/levelthree") {
+        const Url = this.$route.hash;
+        let str = Url.slice(1);
+        this.input = str;
+      }
     }
   }
 };

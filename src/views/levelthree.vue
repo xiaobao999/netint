@@ -2,7 +2,7 @@
   <div class="article_main">
     <div class="article_analysis">
       <div class="l_a_left">
-        <my-card></my-card>
+        <my-card :valclick="valclick"></my-card>
       </div>
       <div class="l_a_right">
         <div>
@@ -27,21 +27,21 @@
     </div>
     <div class="article_list">
       <el-tabs v-model="activeName" type="card" @tab-click="handleClick">
-        <el-tab-pane label="参考文献" name="first">
+        <el-tab-pane label="参考文献" name="first" class="my_tab_pane">
           <div class="left">
             <h2 class="bluesize">
               <span class="iconfont iconshijianbiaoyangshitubiao"></span>
               <span>时间</span>
             </h2>
             <div class="block">
-              <span class="demonstration"></span>
-              <el-date-picker
-                v-model="value1"
-                type="daterange"
-                range-separator="至"
-                start-placeholder="开始日期"
-                end-placeholder="结束日期"
-              ></el-date-picker>
+              <el-select v-model="value" placeholder="请选择">
+                <el-option
+                  v-for="item in options"
+                  :key="item.value"
+                  :label="item.label"
+                  :value="item.value"
+                ></el-option>
+              </el-select>
             </div>
             <!-- 左侧信息详情模块 -->
             <left-list @msgname="getmsg" v-for="(item,i) in leftlist" :key="i" :state="item"></left-list>
@@ -49,7 +49,7 @@
           <!-- 中间详情 -->
           <div class="center" style="width:1000px;">
             <div class="title">
-              <span>共10000条相关结果</span>
+              <span>共{{cardlist.length}}条相关结果</span>
               <el-dropdown @command="handleCommand" trigger="click">
                 <span class="el-dropdown-link">
                   {{command}}
@@ -159,19 +159,56 @@
 .title {
   margin: 30px 0;
 }
+.my_tab_pane {
+  .el-select {
+    width: 100%;
+  }
+  display: flex !important;
+  .left {
+    flex: 1.3 !important;
+  }
+  .center {
+    flex: 3;
+    margin-left: 20px;
+  }
+}
 </style>
 <script>
 export default {
   data() {
     return {
-      leftlist: ["author", "theme"],
+      leftlist: ["author"],
       valueselect: "",
       cardlist: [1, 2],
       activeName: "first",
       value1: "",
       value2: "",
       command: "请选择",
-      val: ""
+      val: "",
+      options: [
+        {
+          value: "2019",
+          label: "2019年"
+        },
+        {
+          value: "2018",
+          label: "2018年"
+        },
+        {
+          value: "2017",
+          label: "2017年"
+        },
+        {
+          value: "2016",
+          label: "2016年"
+        },
+        {
+          value: "2015",
+          label: "2015年"
+        }
+      ],
+      value: "",
+      valclick: ""
     };
   },
   mounted() {},
@@ -190,6 +227,9 @@ export default {
         this.leftlist = data.leftlist;
         this.wordlist = data.wordlist;
       }
+    },
+    gettittle(tittle) {
+      console.log(tittle, 99999);
     }
   }
 };
