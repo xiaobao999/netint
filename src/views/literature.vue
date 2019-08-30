@@ -91,7 +91,10 @@
     </div>
     <ul class="literature_details">
       <li>
-        <h2 class="bluesize">主要作者</h2>
+        <div class="dettittle">
+          <h2 class="bluesize">主要作者</h2>
+          <h4 @click="linkto('author')">查看更多</h4>
+        </div>
         <dl>
           <dd
             v-for="(item,i) in topauthors"
@@ -101,7 +104,10 @@
         </dl>
       </li>
       <li>
-        <h2 class="bluesize">主要机构</h2>
+        <div class="dettittle">
+          <h2 class="bluesize">主要机构</h2>
+          <h4 @click="linkto('mechanism')">查看更多</h4>
+        </div>
         <dl>
           <dd
             v-for="(item,i) in topinstitutions"
@@ -111,7 +117,10 @@
         </dl>
       </li>
       <li>
-        <h2 class="bluesize">重要主题</h2>
+        <div class="dettittle">
+          <h2 class="bluesize">重要主题</h2>
+          <h4 @click="linkto('theme')">查看更多</h4>
+        </div>
         <dl>
           <dd
             v-for="(item,i) in topjournals"
@@ -121,7 +130,10 @@
         </dl>
       </li>
       <li>
-        <h2 class="bluesize">主要文献</h2>
+        <div class="dettittle">
+          <h2 class="bluesize">主要文献</h2>
+          <h4 @click="linkto('publication')">查看更多</h4>
+        </div>
         <dl>
           <dd
             v-for="(item,i) in topconferences"
@@ -278,6 +290,17 @@
     }
   }
 }
+.dettittle {
+  display: flex;
+  justify-content: space-between;
+  h4 {
+    font-size: 14px;
+  }
+  h4:hover {
+    color: #ef8338;
+    cursor: pointer;
+  }
+}
 .literature_details {
   display: flex;
   justify-content: space-between;
@@ -319,6 +342,11 @@ export default {
     this.drawLine();
   },
   methods: {
+    linkto(n) {
+      this.$router.push({
+        path: `/${n}`
+      });
+    },
     async getdata() {
       const res = await this.$http.get("chubanwu");
       if (res.status == 200) {
